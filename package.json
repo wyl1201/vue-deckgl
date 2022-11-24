@@ -1,0 +1,44 @@
+{
+  "name": "vue-deck-mapbox",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@amap/amap-jsapi-loader": "^1.0.1",
+    "@deck.gl/aggregation-layers": "^8.8.20",
+    "@deck.gl/carto": "^8.8.20",
+    "@deck.gl/core": "^8.8.20",
+    "@deck.gl/extensions": "^8.8.20",
+    "@deck.gl/geo-layers": "^8.8.20",
+    "@deck.gl/layers": "^8.8.20",
+    "@deck.gl/mesh-layers": "^8.8.20",
+    "d3-color": "^3.1.0",
+    "geobuf": "^3.0.2",
+    "lodash-es": "^4.17.21",
+    "pbf": "^3.2.1",
+    "pinia": "^2.0.25",
+    "vue": "^3.2.41",
+    "vue-router": "^4.1.6"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.2.0",
+    "autoprefixer": "^10.4.13",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-vue": "^9.7.0",
+    "postcss": "^8.4.19",
+    "prettier": "^2.7.1",
+    "tailwindcss": "^3.2.4",
+    "vite": "^3.2.3"
+  }
+}
