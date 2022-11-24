@@ -8,10 +8,10 @@ export default {
   name: 'ArcLayer',
   mixins: [layerMixins],
   created() {
+    this.type = ArcLayer
     this.defaultProps = {
       ...defaultDeckLayerProps,
       id: uniqueId('arc-layer-'),
-      type: ArcLayer,
       // Render Options
       greatCircle: false,
       widthUnits: 'pixels',

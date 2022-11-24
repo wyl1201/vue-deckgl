@@ -9,9 +9,9 @@ export default {
   name: 'SolidPolygonLayer',
   mixins: [layerMixins],
   created() {
+    this.type = SolidPolygonLayer
     this.defaultProps = {
       ...defaultDeckLayerProps,
-      type: SolidPolygonLayer,
       id: uniqueId('solid-polygon-layer-'),
       filled: true,
       extruded: false,

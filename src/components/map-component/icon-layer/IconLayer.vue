@@ -10,9 +10,9 @@ export default {
   name: 'IconLayer',
   mixins: [layerMixins],
   created() {
+    this.type = IconLayer
     this.defaultProps = {
       ...defaultDeckLayerProps,
-      type: IconLayer,
       id: uniqueId('icon-layer-'),
       sizeScale: 1,
       sizeUnits: 'pixels',

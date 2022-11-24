@@ -9,9 +9,9 @@ export default {
   name: 'GeohashLayer',
   mixins: [layerMixins],
   created() {
+    this.type = GeohashLayer
     this.defaultProps = {
       ...defaultDeckLayerProps,
-      type: GeohashLayer,
       id: uniqueId('geohash-layer-'),
     }
   },

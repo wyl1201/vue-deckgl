@@ -9,9 +9,9 @@ export default {
   name: 'GeoJsonLayer',
   mixins: [layerMixins],
   created() {
+    this.type = GeoJsonLayer
     this.defaultProps = {
       ...defaultDeckLayerProps,
-      type: GeoJsonLayer,
       id: uniqueId('geojson-layer-'),
     }
   },
