@@ -3,27 +3,24 @@
 <script>
 import { IconLayer } from '@deck.gl/layers'
 import { uniqueId } from 'lodash-es'
-import layerManager from '../map-utils/layerManager'
+import { defaultDeckLayerProps } from '../constants'
 import { layerMixins } from '../mixins/layerMixins'
 
 export default {
   name: 'IconLayer',
   mixins: [layerMixins],
-  data() {
-    return {
-      defaultProps: {
-        id: uniqueId('icon-layer-'),
-      },
+  created() {
+    this.defaultProps = {
+      ...defaultDeckLayerProps,
+      type: IconLayer,
+      id: uniqueId('icon-layer-'),
+      sizeScale: 1,
+      sizeUnits: 'pixels',
+      sizeMinPixels: 0,
+      sizeMaxPixels: Number.MAX_SAFE_INTEGER,
+      billboard: true,
+      alphaCutoff: 0.05,
     }
-  },
-
-  mounted() {
-    const layer = new IconLayer({
-      ...this.defaultProps,
-      ...this.layerProps,
-    })
-    layerManager.addLayer(layer)
-    this.layer = layer
   },
 }
 </script>

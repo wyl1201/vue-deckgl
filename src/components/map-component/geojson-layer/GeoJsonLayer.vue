@@ -1,18 +1,18 @@
 <template src="./geohash-layer.html"></template>
 <script>
-import { GeohashLayer } from '@deck.gl/geo-layers'
+import { GeoJsonLayer } from '@deck.gl/layers'
 import { uniqueId } from 'lodash-es'
 import { defaultDeckLayerProps } from '../constants'
 import { layerMixins } from '../mixins/layerMixins'
 
 export default {
-  name: 'GeohashLayer',
+  name: 'GeoJsonLayer',
   mixins: [layerMixins],
   created() {
     this.defaultProps = {
       ...defaultDeckLayerProps,
-      type: GeohashLayer,
-      id: uniqueId('geohash-layer-'),
+      type: GeoJsonLayer,
+      id: uniqueId('geojson-layer-'),
     }
   },
 }
